@@ -1,0 +1,14 @@
+= A reproducer for https://github.com/Azure/azure-sdk-for-java/issues/19612
+
+To run the tests, you need to pass your Azure ceredentials via environment variables:
+
+[source,shell]
+----
+export AZURE_STORAGE_ACCOUNT_NAME=my-account-name
+export AZURE_STORAGE_ACCOUNT_KEY=my-account-key
+
+# Then you can run the tests
+
+mvn test
+----
+
